@@ -6,10 +6,6 @@ recipes:
 - sprout-base::homebrew
 - sprout-homebrew
 
-# apps
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::shiftit
-
 # settings
 - sprout-osx-settings
 - sprout-osx-settings::dock_preferences
@@ -29,9 +25,8 @@ recipes:
 - sprout-mysql
 - sprout-postgresql
 
-# apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+# development (golang)
+- sprout-osx-apps::go
 
 node_attributes:
   sprout:
@@ -65,32 +60,44 @@ node_attributes:
       magnification: false
     homebrew:
       formulae:
-        - ctags-exuberant
         - ag
         - chromedriver
+        - ctags-exuberant
+        - fasd
         - imagemagick
         - node
         - pstree
         - qt
+        - rbenv-binstubs
+        - rbenv-gem-rehash
         - ssh-copy-id
         - tmux
         - tree
         - watch
         - wget
-        - rbenv-binstubs
-        - rbenv-gem-rehash
       casks:
+        - atom
+        - android-studio
         - ccmenu
+        - dockertoolbox
+        - dropbox
         - firefox
         - flycut
-        - gitx-rowanj
         - github
+        - gitx-rowanj
         - google-chrome
         - google-drive
         - google-hangouts
+        - intellij-idea-ce
+        - iterm2
+        - karabiner
+        - lastpass
         - macvim
+        - seil
+        - sonos
         - skype
-        - textmate
+        - slack
+        - slate
         - vagrant
         - virtualbox
         - xquartz
